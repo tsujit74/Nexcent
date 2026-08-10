@@ -31,7 +31,7 @@ export default function Header({ data }: HeaderProps) {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-normal text-[#18191F] transition-colors hover:text-[#4CAF4F]"
+              className="text-1xl font-normal text-[#18191F] transition-colors hover:text-[#4CAF4F]"
             >
               {item.label}
             </Link>
