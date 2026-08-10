@@ -133,22 +133,8 @@
         "href": "#learn-more"
       },
       "image": {
-        "src": "/images/feature-one.svg",
+        "src": "/images/features/pixelgrade.svg",
         "alt": "People working with a membership system"
-      },
-      "imagePosition": "left"
-    },
-    {
-      "id": "feature-two",
-      "title": "How to design your site footer like we did",
-      "description": "Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst.",
-      "button": {
-        "label": "Learn More",
-        "href": "#learn-more"
-      },
-      "image": {
-        "src": "/images/feature-two.svg",
-        "alt": "Person using a mobile membership application"
       },
       "imagePosition": "left"
     }

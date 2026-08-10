@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Clients from "@/components/sections/client";
 import Community from "@/components/sections/Community";
+import FeatureSection from "@/components/sections/FeatureSection";
 import Hero from "@/components/sections/Hero";
 import { landingPage } from "@/data/landingpage";
 
@@ -11,6 +12,12 @@ export default function Home() {
       <Hero data={landingPage.hero} />
       <Clients data={landingPage.clients} />
       <Community data={landingPage.community} />
+       {landingPage.features.map((feature) => (
+        <FeatureSection
+          key={feature.id}
+          data={feature}
+        />
+      ))}
     </main>
   );
 }
