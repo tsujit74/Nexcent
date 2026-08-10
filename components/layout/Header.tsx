@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export default function Header({ data }: HeaderProps) {
   return (
-    <header className="relative z-50 bg-white">
+    <header className="relative z-50 bg-[#F5F7FA]">
       <div className="mx-auto flex h-[84px] max-w-[1200px] items-center justify-between px-6 lg:px-0">
         <a
           href={data.logo.href}
