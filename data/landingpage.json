@@ -108,17 +108,17 @@
       {
         "title": "Membership Organisations",
         "description": "Our membership management software provides full automation of membership renewals and payments",
-        "icon": "/images/community-members.svg"
+        "icon": "/images/community/icon1.svg"
       },
       {
         "title": "National Associations",
         "description": "Our membership management software provides full automation of membership renewals and payments",
-        "icon": "/images/community-national.svg"
+        "icon": "/images/community/icon2.svg"
       },
       {
         "title": "Clubs And Groups",
         "description": "Our membership management software provides full automation of membership renewals and payments",
-        "icon": "/images/community-groups.svg"
+        "icon": "/images/community/icon3.svg"
       }
     ]
   },
