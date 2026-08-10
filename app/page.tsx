@@ -3,6 +3,7 @@ import Clients from "@/components/sections/client";
 import Community from "@/components/sections/Community";
 import FeatureSection from "@/components/sections/FeatureSection";
 import Hero from "@/components/sections/Hero";
+import Statistics from "@/components/sections/Statistics";
 import { landingPage } from "@/data/landingpage";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           data={feature}
         />
       ))}
+      <Statistics data={landingPage.statistics} />
     </main>
   );
 }

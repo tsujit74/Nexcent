@@ -147,22 +147,22 @@
       {
         "value": "2,245,341",
         "label": "Members",
-        "icon": "/images/stat-members.svg"
+        "icon": "/images/statistics/icon1.svg"
       },
       {
         "value": "46,328",
         "label": "Clubs",
-        "icon": "/images/stat-clubs.svg"
+        "icon": "/images/statistics/icon2.svg"
       },
       {
         "value": "828,867",
         "label": "Event Bookings",
-        "icon": "/images/stat-bookings.svg"
+        "icon": "/images/statistics/icon3.svg"
       },
       {
         "value": "1,926,436",
         "label": "Payments",
-        "icon": "/images/stat-payments.svg"
+        "icon": "/images/statistics/icon4.svg"
       }
     ]
   },
