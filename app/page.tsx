@@ -4,6 +4,7 @@ import Community from "@/components/sections/Community";
 import FeatureSection from "@/components/sections/FeatureSection";
 import Hero from "@/components/sections/Hero";
 import Statistics from "@/components/sections/Statistics";
+import Testimonial from "@/components/sections/Testimonial";
 import { landingPage } from "@/data/landingpage";
 
 export default function Home() {
@@ -13,13 +14,10 @@ export default function Home() {
       <Hero data={landingPage.hero} />
       <Clients data={landingPage.clients} />
       <Community data={landingPage.community} />
-       {landingPage.features.map((feature) => (
-        <FeatureSection
-          key={feature.id}
-          data={feature}
-        />
-      ))}
+      <FeatureSection data={landingPage.features[0]} />
       <Statistics data={landingPage.statistics} />
+      <FeatureSection data={landingPage.features[1]} />
+      <Testimonial data={landingPage.testimonial} clientLogos={landingPage.clients.logos} />
     </main>
   );
 }
