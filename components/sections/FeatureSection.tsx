@@ -1,13 +1,12 @@
 import Image from "next/image";
 import type { FeatureData } from "@/types/landingpage";
+import Button from "../ui/Button";
 
 interface FeatureSectionProps {
   data: FeatureData;
 }
 
-export default function FeatureSection({
-  data,
-}: FeatureSectionProps) {
+export default function FeatureSection({ data }: FeatureSectionProps) {
   const image = (
     <div className="flex justify-center">
       <Image
@@ -31,21 +30,17 @@ export default function FeatureSection({
       </p>
 
       <div className="mt-8">
-        <a
+        <Button
+          label={data.button.label}
           href={data.button.href}
-          className="inline-flex items-center justify-center rounded-md bg-[#4CAF4F] px-8 py-3 text-1xl font-medium text-white transition-colors hover:bg-[#388E3C]"
-        >
-          {data.button.label}
-        </a>
+          className="mt-4"
+        />
       </div>
     </div>
   );
 
   return (
-    <section
-      id={data.id}
-      className="bg-white py-10 md:py-10"
-    >
+    <section id={data.id} className="bg-white py-10 md:py-10">
       <div className="mx-auto grid max-w-[1200px] items-center gap-5 px-6 md:grid-cols-2 lg:gap-10 lg:px-0">
         {data.imagePosition === "left" ? (
           <>

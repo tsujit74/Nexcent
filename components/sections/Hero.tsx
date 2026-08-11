@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { HeroData } from "@/types/landingpage";
+import Button from "../ui/Button";
 
 interface HeroProps {
   data: HeroData;
@@ -25,12 +26,11 @@ export default function Hero({ data }: HeroProps) {
             {data.description}
           </p>
 
-          <a
+          <Button
+            label={data.button.label}
             href={data.button.href}
-            className="mt-8 inline-flex items-center justify-center rounded-md bg-[#4CAF4F] px-8 py-3 text-base font-medium text-white transition-colors hover:bg-[#388E3C]"
-          >
-            {data.button.label}
-          </a>
+            className="mt-8"
+          />
         </div>
 
         <div className="flex justify-center md:justify-end">
