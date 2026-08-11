@@ -5,6 +5,7 @@ import FeatureSection from "@/components/sections/FeatureSection";
 import Hero from "@/components/sections/Hero";
 import Statistics from "@/components/sections/Statistics";
 import Testimonial from "@/components/sections/Testimonial";
+import Blog from "@/components/sections/Blog"
 import { landingPage } from "@/data/landingpage";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Statistics data={landingPage.statistics} />
       <FeatureSection data={landingPage.features[1]} />
       <Testimonial data={landingPage.testimonial} clientLogos={landingPage.clients.logos} />
+      <Blog data={landingPage.blog} />
     </main>
   );
 }

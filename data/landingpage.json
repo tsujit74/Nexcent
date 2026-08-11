@@ -204,7 +204,7 @@
       {
         "title": "Creating Streamlined Safeguarding Processes with OneRen",
         "image": {
-          "src": "/images/blog-one.jpg",
+          "src": "/images/blog/blog1.svg",
           "alt": "Person working on a laptop"
         },
         "link": "#blog-one"
@@ -212,7 +212,7 @@
       {
         "title": "What are your safeguarding responsibilities and how can you manage them?",
         "image": {
-          "src": "/images/blog-two.jpg",
+          "src": "/images/blog/blog2.svg",
           "alt": "Laptop and workspace"
         },
         "link": "#blog-two"
@@ -220,7 +220,7 @@
       {
         "title": "Revamping the Membership Model with Triathlon Australia",
         "image": {
-          "src": "/images/blog-three.jpg",
+          "src": "/images/blog/blog3.svg",
           "alt": "Person working on a laptop"
         },
         "link": "#blog-three"
