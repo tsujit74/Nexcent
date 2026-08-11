@@ -1,36 +1,214 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexcent Landing Page
+
+A responsive landing page recreated from the provided Figma design as part of an SDE-1 technical assignment.
+
+## Live Demo
+
+https://nexcent-phi-three.vercel.app/
+
+## GitHub Repository
+
+https://github.com/tsujit74/Nexcent
+
+## Tech Stack
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Next.js App Router
+
+## Features
+
+* Pixel-accurate recreation of the provided Figma design
+* Fully responsive design for desktop, tablet, and mobile
+* Reusable and modular React components
+* Structured JSON-based page content
+* Reusable Button UI component
+* Reusable feature and card components
+* Dynamic rendering of repeated content using structured data
+* Responsive header and footer
+* Newsletter subscription UI
+* Social media links with icon assets
+* Optimized image rendering using Next.js Image
+* Semantic and accessible HTML structure
+* Custom favicon
+
+## Project Structure
+
+```text
+.
+├── app/
+│   ├── icon.svg
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── Clients.tsx
+│   │   ├── Community.tsx
+│   │   ├── FeatureSection.tsx
+│   │   ├── Statistics.tsx
+│   │   ├── Testimonial.tsx
+│   │   ├── Blog.tsx
+│   │   └── CTA.tsx
+│   │
+│   └── ui/
+│       └── Button.tsx
+│
+├── data/
+│   └── landing-page.json
+│
+├── public/
+│   └── images/
+│
+├── types/
+│   └── landingpage.ts
+│
+├── next.config.ts
+├── package.json
+└── README.md
+```
+
+## Architecture
+
+The application separates **content, presentation, and reusable UI components**.
+
+### Structured Data
+
+The page content is maintained in:
+
+```text
+data/landing-page.json
+```
+
+The JSON contains the content for:
+
+* Header
+* Hero
+* Client logos
+* Community section
+* Feature sections
+* Statistics
+* Testimonial
+* Blog
+* CTA
+* Footer
+* Social links
+* Newsletter
+
+This allows content to be updated without hardcoding page-specific content inside individual components.
+
+### Reusable Components
+
+The UI is divided into reusable, single-responsibility components.
+
+Examples include:
+
+* `Header`
+* `Footer`
+* `Hero`
+* `Clients`
+* `Community`
+* `FeatureSection`
+* `Statistics`
+* `Testimonial`
+* `Blog`
+* `CTA`
+* `Button`
+
+Repeated content such as features, cards, navigation links, client logos, blog posts, and social links is rendered from structured data.
+
+The `Button` component is reused across sections instead of duplicating button markup and styling.
+
+## Responsive Design
+
+The landing page is responsive across:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Layouts, spacing, typography, navigation, images, and content sections adapt according to the screen size.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+* Node.js 18 or later
+* npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/tsujit74/Nexcent.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Nexcent
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the application in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Production Build
 
-## Learn More
+Create a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## Design Reference
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The implementation is based on the Figma design provided as part of the SDE-1 technical assignment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+The application is deployed on Vercel.
+
+**Live Application:**
+
+https://nexcent-phi-three.vercel.app/
+
+## Assignment
+
+This project was developed as part of an SDE-1 technical assessment with a focus on:
+
+* Clean architecture
+* Reusable components
+* Maintainable code
+* Responsive design
+* Structured content
+* Modern React and Next.js practices
