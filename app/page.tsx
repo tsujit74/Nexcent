@@ -8,6 +8,7 @@ import Testimonial from "@/components/sections/Testimonial";
 import Blog from "@/components/sections/Blog";
 import { landingPage } from "@/data/landingpage";
 import CTA from "@/components/sections/CTA";
+import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       />
       <Blog data={landingPage.blog} />
       <CTA data={landingPage.cta} />
+      <Footer data={landingPage.footer}/>
     </main>
   );
 }

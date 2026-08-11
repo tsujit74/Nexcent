@@ -108,14 +108,22 @@ export interface FooterColumn {
 export interface NewsletterData {
   title: string;
   placeholder: string;
+  buttonIcon: string;
+  buttonIconAlt: string;
 }
 
 export interface SocialLink {
   label: string;
   href: string;
+  icon: string;
+  iconAlt: string;
 }
-
 export interface FooterData {
+  logo: {
+    image: string;
+    alt: string;
+    href: string;
+  };
   copyright: string;
   rights: string;
   company: FooterColumn;

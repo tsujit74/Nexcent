@@ -237,6 +237,11 @@
   },
 
   "footer": {
+    "logo": {
+      "image": "/images/footer/logo_icon.svg",
+      "alt": "Nexcent",
+      "href": "/"
+    },
     "copyright": "Copyright © 2020 Nexcent Ltd.",
     "rights": "All rights reserved",
     "company": {
@@ -291,24 +296,34 @@
     },
     "newsletter": {
       "title": "Stay up to date",
-      "placeholder": "Your email address"
+      "placeholder": "Your email address",
+      "buttonIcon": "/images/footer/send_icon.svg",
+      "buttonIconAlt": "Subscribe"
     },
     "socialLinks": [
       {
         "label": "Instagram",
-        "href": "#instagram"
+        "href": "#instagram",
+        "icon": "/images/footer/instagram.svg",
+        "iconAlt": "Instagram"
       },
       {
         "label": "Dribbble",
-        "href": "#dribbble"
+        "href": "#dribbble",
+        "icon": "/images/footer/dribble.svg",
+        "iconAlt": "Dribbble"
       },
       {
         "label": "Twitter",
-        "href": "#twitter"
+        "href": "#twitter",
+        "icon": "/images/footer/twitter.svg",
+        "iconAlt": "Twitter"
       },
       {
         "label": "YouTube",
-        "href": "#youtube"
+        "href": "#youtube",
+        "icon": "/images/footer/youtube.svg",
+        "iconAlt": "YouTube"
       }
     ]
   }
