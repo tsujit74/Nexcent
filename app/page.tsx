@@ -5,8 +5,9 @@ import FeatureSection from "@/components/sections/FeatureSection";
 import Hero from "@/components/sections/Hero";
 import Statistics from "@/components/sections/Statistics";
 import Testimonial from "@/components/sections/Testimonial";
-import Blog from "@/components/sections/Blog"
+import Blog from "@/components/sections/Blog";
 import { landingPage } from "@/data/landingpage";
+import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
@@ -18,8 +19,12 @@ export default function Home() {
       <FeatureSection data={landingPage.features[0]} />
       <Statistics data={landingPage.statistics} />
       <FeatureSection data={landingPage.features[1]} />
-      <Testimonial data={landingPage.testimonial} clientLogos={landingPage.clients.logos} />
+      <Testimonial
+        data={landingPage.testimonial}
+        clientLogos={landingPage.clients.logos}
+      />
       <Blog data={landingPage.blog} />
+      <CTA data={landingPage.cta} />
     </main>
   );
 }
